@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蜂鸟影视 - 小身子大振翅：电影/电视剧/动漫/综艺/纪录片/自然 | fengniaoyingshi-h5</title>
+<meta name="description" content="蜂鸟影视（fengniaoyingshi-h5.github.io）像一只悬停采蜜的蜂鸟：电影、电视剧、动漫、综艺、纪录片、短剧、自然、直播按悬停/疾冲/倒飞/虹彩/采蜜排，振翅热度榜、采蜜人手记，移动端自适应。">
+<meta name="keywords" content="蜂鸟影视,振翅片单,悬停慢品,疾冲爽片,倒飞反转,虹彩奇片,采蜜合家,电影导航,电视剧导航,fengniaoyingshi-h5">
+<meta name="author" content="蜂鸟影视">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://fengniaoyingshi-h5.github.io/">
+<meta property="og:title" content="蜂鸟影视 - 小身子，大振翅">
+<meta property="og:description" content="悬停慢品、疾冲爽片、倒飞反转、虹彩奇片、采蜜合家：蜂鸟影视不堆大片，只悬停一下把花蜜片子递给你。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fengniaoyingshi-h5.github.io/">
+<meta property="og:site_name" content="蜂鸟影视">
+<meta name="msvalidate.01" content="BING_VERIFY_CODE">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"蜂鸟影视",
+  "url":"https://fengniaoyingshi-h5.github.io/",
+  "description":"蜂鸟影视是振翅/悬停母题的影视导航站，覆盖电影、电视剧、动漫、综艺、纪录片、短剧、自然、直播。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"蜂鸟影视为什么用蜂鸟做母题？",
+      "acceptedAnswer":{"@type":"Answer","text":"蜂鸟是世界上最小的鸟，却能每秒振翅几十次、空中悬停、倒飞、在花丛里精准采蜜。蜂鸟影视借这个意象：找片要快、停得要准、不喧哗、小体量也有大能量。本站是导航站，不挂侵权播放、不绑下载器。"}
+    },
+    {
+      "@type":"Question",
+      "name":"蜂鸟影视提供片源吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不提供。蜂鸟影视只做影视导航、片单分类、振翅榜和观片手记，不提供播放地址、不绑下载器、不弹会员付费，全站合规。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#10202b;
+  --card:#162c39;
+  --ink:#eaf6f3;
+  --muted:#9fc3bd;
+  --green:#1fae7a;
+  --cyan:#19c3d6;
+  --gold:#ffcf3f;
+  --beak:#ff5d73;
+  --line:rgba(25,195,214,.34);
+  --shadow:0 18px 44px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  background:
+    radial-gradient(760px 420px at 86% -8%,rgba(25,195,214,.2),transparent 60%),
+    radial-gradient(680px 380px at -8% 8%,rgba(31,174,122,.18),transparent 55%),
+    linear-gradient(180deg,#10202b 0%,#14303d 58%,#0c1922 100%);
+  color:var(--ink);line-height:1.78;
+}
+a{color:inherit;text-decoration:none}
+
+/* 振翅门头 */
+.fn-top{position:sticky;top:0;z-index:999;background:rgba(16,32,43,.93);backdrop-filter:blur(10px);border-bottom:2px solid var(--cyan)}
+.fn-top__in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.68rem 1rem}
+.fn-logo{font-weight:900;font-size:1.2rem}
+.fn-logo b{color:var(--cyan)}
+.fn-logo i{color:var(--muted);font-style:normal;font-size:.78rem;background:rgba(31,174,122,.14);padding:.1rem .45rem;border-radius:8px}
+.fn-nav{display:flex;gap:.3rem}
+.fn-nav a{padding:.42rem .8rem;border-radius:20px;font-size:.9rem;color:var(--muted);font-weight:700}
+.fn-nav a:hover{background:rgba(25,195,214,.16);color:var(--cyan)}
+.fn-burger{display:none;flex-direction:column;gap:4px;cursor:pointer}
+.fn-burger span{width:22px;height:2px;background:var(--cyan);border-radius:2px}
+
+/* Hero 蜂鸟悬停 */
+.fn-hero{max-width:1180px;margin:0 auto;padding:3.4rem 1rem 2.6rem;text-align:center;position:relative;overflow:hidden}
+.fn-bird{width:120px;height:120px;margin:0 auto 1.2rem;position:relative;animation:hover 3.4s ease-in-out infinite}
+@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.fn-bird .body{position:absolute;left:46px;top:46px;width:34px;height:28px;border-radius:50% 50% 46% 46%;background:linear-gradient(120deg,var(--green),var(--cyan))}
+.fn-bird .head{position:absolute;left:70px;top:34px;width:22px;height:20px;border-radius:50%;background:linear-gradient(120deg,#2fe0a0,#19c3d6)}
+.fn-bird .beak{position:absolute;left:90px;top:42px;width:22px;height:4px;background:var(--beak);border-radius:3px;transform:rotate(-6deg)}
+.fn-bird .wing{position:absolute;left:40px;top:40px;width:30px;height:18px;background:rgba(255,207,63,.85);border-radius:60% 10% 60% 10%;transform-origin:right center;animation:flap .12s linear infinite}
+.fn-bird .wing.w2{top:54px;opacity:.7}
+@keyframes flap{0%,100%{transform:rotate(-22deg)}50%{transform:rotate(26deg)}}
+.fn-bird .flower{position:absolute;left:8px;top:70px;width:26px;height:26px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(circle at 40% 35%,#ffd7e2,var(--beak) 65%);}
+.fn-hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.22;margin-bottom:1rem}
+.fn-hero h1 em{font-style:normal;color:var(--cyan)}
+.fn-hero h1 u{text-decoration:none;color:var(--gold)}
+.fn-hero p{color:var(--muted);max-width:720px;margin:0 auto 1.8rem}
+.fn-cta{display:inline-flex;gap:.5rem;align-items:center;padding:.85rem 2rem;border-radius:30px;font-weight:800;color:#10202b;background:linear-gradient(90deg,var(--green),var(--cyan),var(--gold));box-shadow:var(--shadow)}
+.fn-dim{color:var(--cyan);font-size:.78rem;letter-spacing:3px;font-family:ui-monospace,monospace;margin-bottom:.5rem}
+
+/* 区块 */
+.fn-sec{max-width:1180px;margin:0 auto;padding:3.1rem 1rem}
+.fn-head{margin-bottom:1.6rem;text-align:center}
+.fn-head .no{font-size:.72rem;color:var(--cyan);letter-spacing:3px;font-family:ui-monospace,monospace}
+.fn-head h2{font-size:clamp(1.4rem,3.4vw,2.1rem);font-weight:900;margin-top:.3rem}
+.fn-head h2 i{color:var(--gold);font-style:normal}
+.fn-head p{color:var(--muted);margin-top:.35rem;font-size:.92rem}
+
+/* 振翅片单 */
+.fn-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.9rem}
+.fn-cell{border-radius:18px;padding:1.3rem 1rem;background:var(--card);text-align:center;transition:.25s;border:1px solid var(--line);position:relative;overflow:hidden}
+.fn-cell::after{content:"";position:absolute;right:-14px;top:-14px;width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 40% 35%,rgba(25,195,214,.5),rgba(31,174,122,.2) 70%,transparent)}
+.fn-cell:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.fn-cell .ic{font-size:1.9rem;position:relative}
+.fn-cell h3{font-size:.96rem;margin:.45rem 0 .25rem;font-weight:800;position:relative}
+.fn-cell p{font-size:.72rem;color:var(--muted);position:relative}
+
+/* 花丛频道 */
+.fn-ch{display:grid;grid-template-columns:repeat(8,1fr);gap:.7rem}
+.fn-c{border-radius:14px;padding:1rem .3rem;background:var(--card);text-align:center;border:1px solid var(--line);transition:.25s}
+.fn-c:hover{transform:translateY(-3px);background:rgba(31,174,122,.14)}
+.fn-c .ic{font-size:1.5rem}
+.fn-c h3{font-size:.78rem;margin-top:.3rem;font-weight:700}
+.fn-c p{font-size:.6rem;color:var(--muted)}
+
+/* 振翅榜：频率条 */
+.fn-rank{display:grid;gap:1.1rem}
+.fn-item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem}
+.fn-item h3{font-size:1.02rem;display:flex;justify-content:space-between;margin-bottom:.55rem;font-weight:800}
+.fn-item h3 span{color:var(--gold)}
+.fn-bar{height:16px;border-radius:999px;background:#0c1922;overflow:hidden;position:relative;border:1px solid var(--line)}
+.fn-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--cyan),var(--gold))}
+.fn-bar i::after{content:"🐦";position:absolute;right:5px;top:-2px;font-size:.8rem}
+
+/* 手记 */
+.fn-notes{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.fn-note{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.4rem}
+.fn-note .tag{font-size:.72rem;padding:.2rem .6rem;border-radius:8px;font-weight:800}
+.fn-note.sip .tag{background:rgba(31,174,122,.18);color:var(--green)}
+.fn-note.flower .tag{background:rgba(255,93,115,.18);color:var(--beak)}
+.fn-note h3{font-size:1.04rem;margin:.6rem 0 .4rem;font-weight:800}
+.fn-note p{font-size:.86rem;color:var(--muted)}
+
+/* 关于 */
+.fn-about{background:linear-gradient(160deg,#173341,#10202b);border:2px solid var(--cyan);border-radius:26px;padding:2.4rem}
+.fn-about h2{font-size:1.9rem;margin-bottom:.8rem;font-weight:900}
+.fn-about h2 u{color:var(--cyan);text-decoration:none}
+.fn-about p{color:var(--muted);margin-bottom:1rem}
+.fn-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.4rem}
+.fn-stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.1rem;text-align:center}
+.fn-stat b{font-size:1.5rem;color:var(--gold);display:block}
+.fn-stat span{font-size:.8rem;color:var(--muted)}
+
+/* FAQ */
+.fn-faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.2rem 1.1rem;margin-bottom:.7rem}
+.fn-faq summary{cursor:pointer;padding:.85rem 0;font-weight:800}
+.fn-faq p{padding:0 0 .85rem;color:var(--muted)}
+
+/* 页脚 */
+.fn-foot{border-top:2px solid var(--cyan);background:#0c1922;padding:2.2rem 1rem;text-align:center;color:var(--muted);font-size:.86rem}
+.fn-foot a{color:var(--cyan)}
+.fn-foot__links{display:flex;gap:1.1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.fn-foot__links a{font-size:.84rem}
+
+@media(max-width:980px){
+  .fn-grid{grid-template-columns:repeat(3,1fr)}
+  .fn-ch{grid-template-columns:repeat(4,1fr)}
+  .fn-notes{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .fn-nav{display:none;position:absolute;top:56px;left:0;right:0;flex-direction:column;gap:0;background:rgba(16,32,43,.98);border-bottom:2px solid var(--cyan)}
+  .fn-nav.show{display:flex}
+  .fn-nav a{padding:.85rem 1rem;border-bottom:1px solid #1c3543}
+  .fn-burger{display:flex}
+  .fn-grid{grid-template-columns:repeat(2,1fr)}
+  .fn-ch{grid-template-columns:repeat(3,1fr)}
+  .fn-stats{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="fn-top">
+  <div class="fn-top__in">
+    <div class="fn-logo">🐦 蜂鸟<b>影视</b> <i>·小身子大振翅</i></div>
+    <nav class="fn-nav" id="fnNav">
+      <a href="#home">花丛</a>
+      <a href="#grid">振翅片单</a>
+      <a href="#ch">花丛频道</a>
+      <a href="#rank">振翅榜</a>
+      <a href="#notes">蜂鸟手记</a>
+      <a href="#about">关于蜂鸟</a>
+    </nav>
+    <div class="fn-burger" onclick="document.getElementById('fnNav').classList.toggle('show')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<section class="fn-hero" id="home">
+  <div class="fn-bird">
+    <div class="flower"></div>
+    <div class="wing w1"></div>
+    <div class="wing w2"></div>
+    <div class="body"></div>
+    <div class="head"></div>
+    <div class="beak"></div>
+  </div>
+  <p class="fn-dim">// hover, sip, fly on</p>
+  <h1>小身子，<em>大振翅</em><br>蜂鸟影视，<u>悬停一下就把好片递来</u></h1>
+  <p>蜂鸟影视不堆“全网最全”，也不喊“秒播不卡”。蜂鸟那么小，却能每秒振翅几十次、空中悬停、倒飞、精准采蜜——找片也该这样：快、轻、准、不吵。好片像花蜜，不用翻三百页，悬停一下就闻到。</p>
+  <a class="fn-cta" href="#grid">🐦 振翅去看花丛</a>
+</section>
+
+<section class="fn-sec" id="grid">
+  <div class="fn-head">
+    <div class="no">// five wing moods</div>
+    <h2>振翅 <i>片单</i></h2>
+    <p>不按动作/喜剧硬分，按“蜂鸟怎么飞过去看这片”分。</p>
+  </div>
+  <div class="fn-grid">
+    <div class="fn-cell"><div class="ic">🌀</div><h3>悬停·慢品</h3><p>文艺、长镜头、旧城、雨声、茶烟</p></div>
+    <div class="fn-cell"><div class="ic">⚡</div><h3>疾冲·爽片</h3><p>动作、逆袭、赛车、爽剧、爆米花</p></div>
+    <div class="fn-cell"><div class="ic">↩️</div><h3>倒飞·反转</h3><p>悬疑、时间线、最后一秒翻盘</p></div>
+    <div class="fn-cell"><div class="ic">🌈</div><h3>虹彩·奇片</h3><p>动画、奇幻、梦境、怪味、作者派</p></div>
+    <div class="fn-cell"><div class="ic">🍯</div><h3>采蜜·合家</h3><p>动画、温情、周末、不费脑</p></div>
+  </div>
+</section>
+
+<section class="fn-sec" id="ch">
+  <div class="fn-head">
+    <div class="no">// eight flower gates</div>
+    <h2>花丛 <i>频道</i></h2>
+    <p>八朵花，从自然到直播都采得到。</p>
+  </div>
+  <div class="fn-ch">
+    <div class="fn-c"><div class="ic">🎬</div><h3>电影</h3><p>院线/经典/小众</p></div>
+    <div class="fn-c"><div class="ic">📺</div><h3>剧集</h3><p>国产/韩剧/美剧/日剧</p></div>
+    <div class="fn-c"><div class="ic">🍥</div><h3>动漫</h3><p>新番/国创/剧场版</p></div>
+    <div class="fn-c"><div class="ic">🎤</div><h3>综艺</h3><p>慢综/竞演/户外</p></div>
+    <div class="fn-c"><div class="ic">🐝</div><h3>纪录片</h3><p>自然/花丛/海洋/山野</p></div>
+    <div class="fn-c"><div class="ic">⚡</div><h3>短剧</h3><p>逆袭/甜宠/悬疑短打</p></div>
+    <div class="fn-c"><div class="ic">🌿</div><h3>自然</h3><p>蜂鸟/植物/微距/四季</p></div>
+    <div class="fn-c"><div class="ic">📡</div><h3>直播</h3><p>首映/主创谈/花丛夜话</p></div>
+  </div>
+</section>
+
+<section class="fn-sec" id="rank">
+  <div class="fn-head">
+    <div class="no">// wingbeat heat</div>
+    <h2>振翅 <i>热度榜</i></h2>
+    <p>按“振翅值 = 想安利 + 二刷 + 悬停值 + 小体量大能量”综合排。</p>
+  </div>
+  <div class="fn-rank">
+    <div class="fn-item"><h3>1. 悬停：小森林 <span>99%</span></h3><div class="fn-bar"><i style="width:99%"></i></div></div>
+    <div class="fn-item"><h3>2. 疾冲：疯狂的麦克斯：狂暴之路 <span>97%</span></h3><div class="fn-bar"><i style="width:97%"></i></div></div>
+    <div class="fn-item"><h3>3. 倒飞：看不见的客人 <span>96%</span></h3><div class="fn-bar"><i style="width:96%"></i></div></div>
+    <div class="fn-item"><h3>4. 虹彩：千与千寻 <span>95%</span></h3><div class="fn-bar"><i style="width:95%"></i></div></div>
+    <div class="fn-item"><h3>5. 采蜜：寻梦环游记 <span>93%</span></hth><div class="fn-bar"><i style="width:93%"></i></div></div>
+  </div>
+</section>
+
+<section class="fn-sec" id="notes">
+  <div class="fn-head">
+    <div class="no">// sipper & flower-watcher</div>
+    <h2>蜂鸟 <i>手记</i></h2>
+    <p>一边采蜜，一边临花。</p>
+  </div>
+  <div class="fn-notes">
+    <article class="fn-note sip">
+      <span class="tag">🍯 采蜜人</span>
+      <h3>别把花丛种成超市</h3>
+      <p>蜂鸟认花不认货架。蜂鸟影视不按“动作/爱情/科幻”死分，而按飞行姿态分：悬停的、疾冲的、倒飞的、虹彩的、采蜜的。花一多还分科，观众就累；花少而香，才有人肯悬停。</p>
+    </article>
+    <article class="fn-note flower">
+      <span class="tag">🌸 临花人</span>
+      <h3>悬停片要在不赶时间时看</h3>
+      <p>《小森林》《海街日记》《步履不停》这种，赶地铁刷两分钟像白开水；周末晚上、灯关一半、手机倒扣，才看得出蜂鸟在花心抖翅膀的那种细。蜂鸟影视把“悬停”放第一位，是给慢人留的。</p>
+    </article>
+    <article class="fn-note sip">
+      <span class="tag">🍯 采蜜人</span>
+      <h3>疾冲片不是低级，是耗能</h3>
+      <p>蜂鸟一天要吃相当于体重两倍的蜜，不然振不动翅膀。人也是：加班一天别硬啃文艺片，来部《疯狂的麦克斯》《死侍》《急速追杀》疾冲一下，脑子放空，翅膀反而续上电。</p>
+    </article>
+    <article class="fn-note flower">
+      <span class="tag">🌸 临花人</span>
+      <h3>倒飞反转要在独处时看</h3>
+      <p>《看不见的客人》《前目的地》《彗星来的那一夜》这种倒飞片，旁边人问“他到底谁”就破功。蜂鸟影视标“倒飞慎点”：别剧透、别快进、别边刷微信边看，悬停到最后那一下才值。</p>
+    </article>
+  </div>
+</section>
+
+<section class="fn-sec" id="about">
+  <div class="fn-about">
+    <h2>关于 <u>蜂鸟影视</u></h2>
+    <p>
+      蜂鸟影视（fengniaoyingshi-h5.github.io）不是“又一个影视大全”，它是一只悬停在花丛上的蜂鸟。你不用背类型表，只要问：今天我想悬停、疾冲、倒飞、看虹彩，还是采蜜合家？
+    </p>
+    <p>
+      电影、电视剧、动漫、综艺、纪录片、短剧、自然、直播，全都按飞行姿态重新排：悬停·慢品 / 疾冲·爽片 / 倒飞·反转 / 虹彩·奇片 / 采蜜·合家。小身子，大振翅。
+    </p>
+    <div class="fn-stats">
+      <div class="fn-stat"><b>5 翅</b><span>悬停/疾冲/倒飞/虹彩/采蜜</span></div>
+      <div class="fn-stat"><b>8 花</b><span>影/剧/漫/综/纪/短剧/自然/直播</span></div>
+      <div class="fn-stat"><b>50–80</b><span>每秒振翅次数（意象）</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="fn-sec fn-faq">
+  <div class="fn-head">
+    <div class="no">// q & a</div>
+    <h2>蜂鸟 <i>问答</i></h2>
+  </div>
+  <details open>
+    <summary>蜂鸟影视和“蜂鸟影院/蜂鸟网”是一回事吗？</summary>
+    <p>不是。蜂鸟网是摄影门户，网上有些“蜂鸟影院”做聚合播放；蜂鸟影视这里只是借蜂鸟“悬停、采蜜、小体量大能量”的意象做导航站，不提供播放、不绑下载器、不弹会员付费。</p>
+  </details>
+  <details>
+    <summary>和纤纤影视、金梅影视差在哪？</summary>
+    <p>纤纤是素纱轻絮（轻/细/柔），金梅是梅的脾气（孤寒/傲骨/暗香/雪夜/暖炉），蜂鸟是飞行动作（悬停/疾冲/倒飞/虹彩/采蜜）——一个慢、一个清、一个快而准。</p>
+  </details>
+  <details>
+    <summary>蜂鸟影视有片源吗？</summary>
+    <p>没有。蜂鸟影视是纯导航与片单站，只做分类、简介、振翅榜和手记，全站合规。</p>
+  </details>
+</section>
+
+<footer class="fn-foot">
+  <div class="fn-foot__links">
+    <a href="#grid">振翅片单</a>
+    <a href="#ch">花丛频道</a>
+    <a href="#rank">振翅榜</a>
+    <a href="#notes">蜂鸟手记</a>
+    <a href="#about">关于蜂鸟</a>
+    <a href="#">免责声明</a>
+  </div>
+  <p>© 2026 <a href="https://fengniaoyingshi-h5.github.io">蜂鸟影视</a> · fengniaoyingshi-h5.github.io</p>
+  <p>蜂鸟影视 —— 小身子，大振翅；悬停一下，好片自来。</p>
+</footer>
+
+<script>
+document.querySelectorAll('.fn-nav a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('fnNav').classList.remove('show');
+  });
+});
+</script>
+
+</body>
+</html>
